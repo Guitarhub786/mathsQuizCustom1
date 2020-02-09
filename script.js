@@ -80,6 +80,8 @@ function matchSums() {
 function showSum(quiz) {
     //generate random array index
     const randIndex = Math.floor(Math.random() * quiz.length);
+    let mrAdd = Math.floor(Math.random() + 10);
+    quiz[randIndex].sum1 = Math.floor(Math.random() + 20);
 
     display = quiz[randIndex].sum1 + " - " + quiz[randIndex].sum2;
     answer = parseInt(quiz[randIndex].sum1 - quiz[randIndex].sum2);
