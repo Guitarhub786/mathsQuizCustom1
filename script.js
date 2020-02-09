@@ -1,38 +1,17 @@
 window.addEventListener('load', init);
 
 var quiz = [
-    { sum1: 3, sum2: 6 },
-    { sum1: 3, sum2: 7 },
-    { sum1: 3, sum2: 8 },
-    { sum1: 3, sum2: 9 },
-    { sum1: 3, sum2: 12 },
-    { sum1: 4, sum2: 5 },
-    { sum1: 4, sum2: 6 },
-    { sum1: 4, sum2: 7 },
-    { sum1: 4, sum2: 8 },
-    { sum1: 4, sum2: 9 },
-    { sum1: 4, sum2: 8 },
+    { sum1: 10, sum2: 10 },
+    { sum1: 10, sum2: 9 },
+    { sum1: 10, sum2: 8 },
+    { sum1: 10, sum2: 7 },
+    { sum1: 10, sum2: 6 },
+    { sum1: 10, sum2: 5 },
+    { sum1: 10, sum2: 4 },
+    { sum1: 10, sum2: 3 },
+    { sum1: 10, sum2: 2 },
+    { sum1: 10, sum2: 1 },
 
-    { sum1: 5, sum2: 4 },
-    { sum1: 6, sum2: 4 },
-    { sum1: 6, sum2: 7 },
-    { sum1: 6, sum2: 8 },
-    { sum1: 6, sum2: 9 },
-    { sum1: 6, sum2: 11 },
-    { sum1: 6, sum2: 12 },
-    
-    { sum1: 7, sum2: 2 },
-    { sum1: 7, sum2: 3 },
-    { sum1: 7, sum2: 4 },
-    { sum1: 7, sum2: 5 },
-    { sum1: 7, sum2: 6 },
-    { sum1: 7, sum2: 7 },
-    { sum1: 7, sum2: 8 },
-    { sum1: 7, sum2: 9 },
-    { sum1: 7, sum2: 10 },
-    { sum1: 7, sum2: 11 },
-    { sum1: 7, sum2: 12 },
-    
 ];
 
 
@@ -102,8 +81,8 @@ function showSum(quiz) {
     //generate random array index
     const randIndex = Math.floor(Math.random() * quiz.length);
 
-    display = quiz[randIndex].sum1 + " x " + quiz[randIndex].sum2;
-    answer = parseInt(quiz[randIndex].sum1 * quiz[randIndex].sum2);
+    display = quiz[randIndex].sum1 + " - " + quiz[randIndex].sum2;
+    answer = parseInt(quiz[randIndex].sum1 - quiz[randIndex].sum2);
 
     //output random sum
     // document.getElementById("myQuestion").value = display;
