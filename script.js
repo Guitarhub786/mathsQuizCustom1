@@ -65,7 +65,7 @@ function matchSums() {
     // use == as adding text + number
     // === you use 'parseInt' on value and array
     if (parseInt(domInput.value) === answer) {
-        domOutput.value = "(" + answer + ") " + "Correct!";
+        domOutput.value = "(" + display + " = " + answer + ") " + "Correct!";
         return true;
     } else {
         domInput.value = '';
@@ -89,6 +89,7 @@ function showSum(quiz) {
     display = quiz[randIndex].sum1 + " - " + quiz[randIndex].sum2;
     answer = parseInt(quiz[randIndex].sum1 - quiz[randIndex].sum2);
 
+    // Make sure answer is not in "-" minus
     if (answer < 0) showSum(quiz);
 
     //output random sum
