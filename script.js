@@ -65,7 +65,7 @@ function matchSums() {
     // use == as adding text + number
     // === you use 'parseInt' on value and array
     if (parseInt(domInput.value) === answer) {
-        domOutput.value = "Correct!";
+        domOutput.value = "(" + answer + ") " + "Correct!";
         return true;
     } else {
         domInput.value = '';
